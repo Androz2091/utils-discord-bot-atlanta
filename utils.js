@@ -27,4 +27,4 @@ function sendAd(){
     client.channels.get(questions).send(ads);
 };
 var CronJob = require("cron").CronJob;
-new CronJob("* 30 16 * * *", sendAd, null, true, tz);
+new CronJob("1 30 16 * * *", sendAd, null, true, tz);
